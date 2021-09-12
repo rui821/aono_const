@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+  font-family: "inherit";
+    font: inherit;
+}
+body {
+    font-family: "inherit";
+    
+}
+h1,h2,h3,h4,h5,h6,p,a,li {
+  line-height: 1.2;
+  font-family: 'Hiragino Mincho ProN','Yu Mincho Light',sans-serif;
+}
+.wrap {
+  overflow: hidden;
+}
+#page{
+    background-image:url(../image/back.png);background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    
+}
+a:hover {
+  opacity: .5;
+  transition: .2s;
+}
+.top{
+    max-width: 1100px;
+    margin:0 auto;
+    
+}
+#pagehead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.header-logo{
+    height: 60px;
+}
+
+#global ul{
+    display: flex;
+}
+#global ul li{
+    list-style: none;
+    margin: 0 30px;
+}
+#global ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.headtex{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Hiragino Mincho ProN','Yu Mincho Light',sans-serif;
+}
+
+.header-icon{
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .top{
+        height: 50vh;
+    }
+    .header-logo{
+        height: 40px;
+    }
+    .header-icon{
+        display: block;
+        font-size: 28px;
+    }
+    #global{
+       display:none; 
+    }
+    .headtex{
+        font-size: 24px;
+    }
+}
+
+
+
+
+.news{
+    max-width: 1100px;
+    margin:0 auto;
+    
+    padding: 90px 0;
+}
+.news h2{
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: 'Hiragino Mincho ProN','Yu Mincho Light',sans-serif;
+}
+
+.news-list{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.news-list li{
+    list-style: none;
+    padding: 30px 0;
+    border-bottom: 1px solid #000;
+}
+.news-list li a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.news-list__border{
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 11px;
+    margin: 0px 30px;
+    padding: 5px 8px;
+}
+
+.case .exam{
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.case {
+    max-width: 1100px;
+    padding:90px 0;
+    margin: 0 auto;
+    
+}
+
+.content{
+    display: flex;
+    #border:solid 1px #000;
+}
+
+.case-content{
+    width: 50%;
+    text-align: center;
+    
+}
+
+.exam{
+    font-size: 38px;
+    margin-bottom: 90px;
+    font-family: 'Hiragino Mincho ProN','Yu Mincho Light',sans-serif;
+}
+.case-tex{
+    font-size: 24px;
+    margin-top: 30px;
+    font-family: 'Hiragino Mincho ProN','Yu Mincho Light',sans-serif;
+}
+.case-from{
+    font-size: 14px;
+    margin-top: 15px;
+    font-family: 'Hiragino Mincho ProN','Yu Mincho Light',sans-serif;
+}
+.more{
+    width:300px;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.case-content__btn {
+  display: block;
+  margin-top: 15px;
+}
+
+.case-btn{
+    text-align: center;
+    margin-top: 80px;
+}
+.case-btn a{
+  text-decoration: none;
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 12px 40px;
+  color: #000;
+  font-size: 20px;
+}
+
+.case-content__img {
+    max-width: 430px;
+    margin: 0 auto;
+    
+}
+.case-content__img .building{
+    width: 100%;
+}
+@media screen and (max-width: 960px) {
+    .case{
+        padding: 50px 20px;
+    }
+    .content{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .case-content{
+        width:100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .case-tex{
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .case-btn {
+    margin-top: 0px;
+  }
+    .case-content__img {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.link{
+    display: flex;
+    padding-top: 90px
+}
+.link-img{
+    display: block;
+    width:calc(100%/3);
+}
+.link-img img{
+    width:100%;
+    vertical-align:middle;
+}
+@media screen and (max-width: 960px){
+    .link{
+        padding-top:50px;
+        flex-direction: column;
+
+    }
+    .link-img{
+        width:100%;
+    }
+    .link-img img{
+        vertical-align:middle;
+    }
+}
+
+
+.foot{
+    width:100%;
+    background-color: black;
+    
+}
+.foot-content{
+    
+    max-width: 1100px;
+    margin: 0 auto
+}
+
+.footer-nav{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.foot-img img{
+    width:100px;
+}
+
+.foot ul{
+    display: flex;
+   
+}
+.foot ul li{
+    #list-style: none;
+    margin: 0 30px;
+    
+}
+
+.foot ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+}
+
+#copyright{
+    text-align: center;
+    color:white;
+    font-size: 12px;
+    padding-bottom: 10px;
+    font-family: 'Hiragino Mincho ProN','Yu Mincho Light',sans-serif;
+}
+
+@media screen and (max-width: 960px) { 
+    .footer-nav{
+        padding-top: 50px;
+        margin-bottom: 30px;
+        flex-direction: column-reverse;
+    }
+    #foot ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    #foot ul li{
+        margin-bottom: 30px;
+    }
+    .footer-nav__list{
+        margin-bottom: 20px;
+    }
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline; background:transparent;
+    font: inherit;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
